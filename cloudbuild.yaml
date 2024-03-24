@@ -4,7 +4,7 @@ steps:
     args: ['build', '-t', 'gcr.io/elite-antenna-401800/flask-backend:latest', '.']
   # Push the Docker image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/	elite-antenna-401800/flask-backend:latest']
+    args: ['push', 'gcr.io/elite-antenna-401800/flask-backend:latest']
   # Deploy using Terraform (optional, requires Terraform setup in Cloud Build)
   # - name: 'gcr.io/$PROJECT_ID/terraform'
   #   args: ['apply', '-auto-approve']
